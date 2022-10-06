@@ -1,0 +1,17 @@
+D:\work and study\универ\ПРВ\Pipe Chat\Pipe Chat\bin\Debug\net6.0-windows\Pipe Chat.exe
+D:\work and study\универ\ПРВ\Pipe Chat\Pipe Chat\bin\Debug\net6.0-windows\Pipe Chat.deps.json
+D:\work and study\универ\ПРВ\Pipe Chat\Pipe Chat\bin\Debug\net6.0-windows\Pipe Chat.runtimeconfig.json
+D:\work and study\универ\ПРВ\Pipe Chat\Pipe Chat\bin\Debug\net6.0-windows\Pipe Chat.dll
+D:\work and study\универ\ПРВ\Pipe Chat\Pipe Chat\bin\Debug\net6.0-windows\Pipe Chat.pdb
+D:\work and study\универ\ПРВ\Pipe Chat\Pipe Chat\obj\Debug\net6.0-windows\Pipe Chat.csproj.AssemblyReference.cache
+D:\work and study\универ\ПРВ\Pipe Chat\Pipe Chat\obj\Debug\net6.0-windows\Pipe_Chat.Form1.resources
+D:\work and study\универ\ПРВ\Pipe Chat\Pipe Chat\obj\Debug\net6.0-windows\Pipe Chat.csproj.GenerateResource.cache
+D:\work and study\универ\ПРВ\Pipe Chat\Pipe Chat\obj\Debug\net6.0-windows\Pipe Chat.GeneratedMSBuildEditorConfig.editorconfig
+D:\work and study\универ\ПРВ\Pipe Chat\Pipe Chat\obj\Debug\net6.0-windows\Pipe Chat.AssemblyInfoInputs.cache
+D:\work and study\универ\ПРВ\Pipe Chat\Pipe Chat\obj\Debug\net6.0-windows\Pipe Chat.AssemblyInfo.cs
+D:\work and study\универ\ПРВ\Pipe Chat\Pipe Chat\obj\Debug\net6.0-windows\Pipe Chat.csproj.CoreCompileInputs.cache
+D:\work and study\универ\ПРВ\Pipe Chat\Pipe Chat\obj\Debug\net6.0-windows\Pipe Chat.dll
+D:\work and study\универ\ПРВ\Pipe Chat\Pipe Chat\obj\Debug\net6.0-windows\refint\Pipe Chat.dll
+D:\work and study\универ\ПРВ\Pipe Chat\Pipe Chat\obj\Debug\net6.0-windows\Pipe Chat.pdb
+D:\work and study\универ\ПРВ\Pipe Chat\Pipe Chat\obj\Debug\net6.0-windows\Pipe Chat.genruntimeconfig.cache
+D:\work and study\универ\ПРВ\Pipe Chat\Pipe Chat\obj\Debug\net6.0-windows\ref\Pipe Chat.dll
