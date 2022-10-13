@@ -21,9 +21,12 @@ namespace Pipe_Chat
             StreamReader rd = new StreamReader(pipe);
             StreamWriter wr = new StreamWriter(pipe);
             wr.WriteLine(textBox1.Text);
+            textBox2.Text += "Вы: " + textBox1.Text + "/r/n";
             textBox1.Text = "";
-            rd.Close();
+            
+            
             wr.Close();
+            rd.Close();
         }
     }
 }

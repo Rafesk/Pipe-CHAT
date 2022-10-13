@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанные с этой сборкой.
-[assembly: AssemblyTitle("Console Pipe Chat")]
+[assembly: AssemblyTitle("Con Pipe chat")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Console Pipe Chat")]
+[assembly: AssemblyProduct("Con Pipe chat")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID представляет идентификатор typelib, если этот проект доступен из модели COM
-[assembly: Guid("11640489-b2eb-4b1d-8951-97184a5a5f74")]
+[assembly: Guid("bb13ed64-4899-496d-9ec9-f9e812375e2a")]
 
 // Сведения о версии сборки состоят из указанных ниже четырех значений:
 //

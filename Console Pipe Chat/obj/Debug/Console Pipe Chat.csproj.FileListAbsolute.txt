@@ -1,8 +1,0 @@
-D:\work and study\универ\ПРВ\Pipe Chat\Console Pipe Chat\bin\Debug\Console Pipe Chat.exe.config
-D:\work and study\универ\ПРВ\Pipe Chat\Console Pipe Chat\bin\Debug\Console Pipe Chat.exe
-D:\work and study\универ\ПРВ\Pipe Chat\Console Pipe Chat\bin\Debug\Console Pipe Chat.pdb
-D:\work and study\универ\ПРВ\Pipe Chat\Console Pipe Chat\obj\Debug\Console Pipe Chat.csproj.AssemblyReference.cache
-D:\work and study\универ\ПРВ\Pipe Chat\Console Pipe Chat\obj\Debug\Console Pipe Chat.csproj.SuggestedBindingRedirects.cache
-D:\work and study\универ\ПРВ\Pipe Chat\Console Pipe Chat\obj\Debug\Console Pipe Chat.csproj.CoreCompileInputs.cache
-D:\work and study\универ\ПРВ\Pipe Chat\Console Pipe Chat\obj\Debug\Console Pipe Chat.exe
-D:\work and study\универ\ПРВ\Pipe Chat\Console Pipe Chat\obj\Debug\Console Pipe Chat.pdb

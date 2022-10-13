@@ -1,0 +1,8 @@
+D:\work and study\универ\ПРВ\Pipe Chat\Con Pipe chat\bin\Debug\Con Pipe chat.exe.config
+D:\work and study\универ\ПРВ\Pipe Chat\Con Pipe chat\bin\Debug\Con Pipe chat.exe
+D:\work and study\универ\ПРВ\Pipe Chat\Con Pipe chat\bin\Debug\Con Pipe chat.pdb
+D:\work and study\универ\ПРВ\Pipe Chat\Con Pipe chat\obj\Debug\Con Pipe chat.csproj.AssemblyReference.cache
+D:\work and study\универ\ПРВ\Pipe Chat\Con Pipe chat\obj\Debug\Con Pipe chat.csproj.SuggestedBindingRedirects.cache
+D:\work and study\универ\ПРВ\Pipe Chat\Con Pipe chat\obj\Debug\Con Pipe chat.csproj.CoreCompileInputs.cache
+D:\work and study\универ\ПРВ\Pipe Chat\Con Pipe chat\obj\Debug\Con Pipe chat.exe
+D:\work and study\универ\ПРВ\Pipe Chat\Con Pipe chat\obj\Debug\Con Pipe chat.pdb

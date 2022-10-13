@@ -1,18 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO.Pipes;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO;
-using System.IO.Pipes;
+using System.Threading;
 
-namespace Console_Pipe_Chat
+namespace Con_Pipe_chat
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            NamedPipeServerStream pipe = new NamedPipeServerStream("myPipe", PipeDirection.InOut,2);
+            NamedPipeServerStream pipe = new NamedPipeServerStream("myPipe", PipeDirection.InOut, 2);
             pipe.WaitForConnection();
             Console.WriteLine("Пользователь подключился!");
             StreamReader rd = new StreamReader(pipe);
@@ -20,8 +21,10 @@ namespace Console_Pipe_Chat
             wr.AutoFlush = true;
             string str = rd.ReadLine();
             Console.WriteLine("Read: " + str);
-            rd.Close();
+            
+            
             wr.Close();
+            rd.Close();
         }
     }
 }
