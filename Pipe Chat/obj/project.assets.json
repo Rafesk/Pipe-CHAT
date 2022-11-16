@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\work and study\\универ\\ПРВ\\Pipe Chat\\Pipe Chat\\Pipe Chat.csproj",
+      "projectUniqueName": "D:\\work and study\\uni\\PRV\\Pipe Chat\\Pipe Chat\\Pipe Chat.csproj",
       "projectName": "Pipe Chat",
-      "projectPath": "D:\\work and study\\универ\\ПРВ\\Pipe Chat\\Pipe Chat\\Pipe Chat.csproj",
+      "projectPath": "D:\\work and study\\uni\\PRV\\Pipe Chat\\Pipe Chat\\Pipe Chat.csproj",
       "packagesPath": "C:\\Users\\Ксюня\\.nuget\\packages\\",
-      "outputPath": "D:\\work and study\\универ\\ПРВ\\Pipe Chat\\Pipe Chat\\obj\\",
+      "outputPath": "D:\\work and study\\uni\\PRV\\Pipe Chat\\Pipe Chat\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\App\\Visual Studio 3\\NuGetPackages"

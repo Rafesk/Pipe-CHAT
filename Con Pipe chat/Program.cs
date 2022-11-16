@@ -11,20 +11,35 @@ namespace Con_Pipe_chat
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public static List<string> msgs = new List<string>();
+        public static async void PipeWork()
         {
-            NamedPipeServerStream pipe = new NamedPipeServerStream("myPipe", PipeDirection.InOut, 2);
+            NamedPipeServerStream pipe = new NamedPipeServerStream("myPipe", PipeDirection.InOut, 5);
             pipe.WaitForConnection();
             Console.WriteLine("Пользователь подключился!");
+            Thread thread1 = new Thread(PipeWork);
+            thread1.Start();
             StreamReader rd = new StreamReader(pipe);
             StreamWriter wr = new StreamWriter(pipe);
-            wr.AutoFlush = true;
-            string str = rd.ReadLine();
-            Console.WriteLine("Read: " + str);
-            
-            
-            wr.Close();
-            rd.Close();
+            while (true)
+            {
+                String str = rd.ReadLine();
+                Console.WriteLine("Read: " + str);
+                msgs.Add(str);
+                Console.WriteLine("сообщения:");
+                foreach(string str2 in msgs)
+                {
+                    Console.WriteLine(str2);
+                }
+                wr.WriteLine("Ответ: "+ str);
+                wr.Flush();
+                await Task.Delay(2000);
+            }
+        }
+        static void Main(string[] args)
+        {
+            Thread thread = new Thread(PipeWork);
+            thread.Start();
         }
     }
 }

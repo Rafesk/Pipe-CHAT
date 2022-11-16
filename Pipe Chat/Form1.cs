@@ -14,6 +14,19 @@ namespace Pipe_Chat
         {
             pipe = new NamedPipeClientStream("myPipe");
             pipe.Connect();
+            SMSREAD();
+        }
+        public async void SMSREAD()
+        {
+            StreamReader rd = new StreamReader(pipe);
+            StreamWriter wr = new StreamWriter(pipe);
+            while (true)
+            {
+                wr.WriteLine(textBox1.Text);
+                wr.Flush();
+                textBox2.Text = rd.ReadLine();
+                await Task.Delay(2000);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -21,12 +34,10 @@ namespace Pipe_Chat
             StreamReader rd = new StreamReader(pipe);
             StreamWriter wr = new StreamWriter(pipe);
             wr.WriteLine(textBox1.Text);
+            wr.Flush();
             textBox2.Text += "Вы: " + textBox1.Text + "/r/n";
             textBox1.Text = "";
-            
-            
-            wr.Close();
-            rd.Close();
+
         }
     }
 }
