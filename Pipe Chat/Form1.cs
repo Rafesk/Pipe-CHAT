@@ -12,32 +12,35 @@ namespace Pipe_Chat
 
         private void button1_Click(object sender, EventArgs e)
         {
-            pipe = new NamedPipeClientStream("myPipe");
+            pipe = new NamedPipeClientStream(".", "myPipe", PipeDirection.InOut,PipeOptions.Asynchronous);
             pipe.Connect();
-            SMSREAD();
+            rd = new StreamReader(pipe);
+            wr = new StreamWriter(pipe);
+            t = rd.ReadLineAsync();
+            timer1.Enabled = true;
         }
-        public async void SMSREAD()
-        {
-            StreamReader rd = new StreamReader(pipe);
-            StreamWriter wr = new StreamWriter(pipe);
-            while (true)
-            {
-                wr.WriteLine(textBox1.Text);
-                wr.Flush();
-                textBox2.Text = rd.ReadLine();
-                await Task.Delay(2000);
-            }
-        }
-
+        
+        Task<string> t;
+        StreamReader rd;
+        StreamWriter wr;
         private void button2_Click(object sender, EventArgs e)
         {
-            StreamReader rd = new StreamReader(pipe);
-            StreamWriter wr = new StreamWriter(pipe);
             wr.WriteLine(textBox1.Text);
             wr.Flush();
-            textBox2.Text += "Вы: " + textBox1.Text + "/r/n";
+            textBox2.Text += "Вы: " + textBox1.Text + "\r\n";
             textBox1.Text = "";
+            
+            //String text = rd.ReadLine();
+            //textBox2.Text += "Ответ: "+ text + "\r\n";
+        }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (t.IsCompleted)
+            {
+                textBox2.Text +=  t.Result + "\r\n";
+                t = rd.ReadLineAsync();
+            }
         }
     }
 }

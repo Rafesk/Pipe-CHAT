@@ -12,29 +12,41 @@ namespace Con_Pipe_chat
     internal class Program
     {
         public static List<string> msgs = new List<string>();
-        public static async void PipeWork()
+        public static void PipeWork()
         {
-            NamedPipeServerStream pipe = new NamedPipeServerStream("myPipe", PipeDirection.InOut, 5);
+            NamedPipeServerStream pipe = new NamedPipeServerStream("myPipe", PipeDirection.InOut, 5,PipeTransmissionMode.Message,PipeOptions.Asynchronous);
             pipe.WaitForConnection();
             Console.WriteLine("Пользователь подключился!");
             Thread thread1 = new Thread(PipeWork);
             thread1.Start();
             StreamReader rd = new StreamReader(pipe);
             StreamWriter wr = new StreamWriter(pipe);
+            int msgCount = 0;
+            Task<string> t = rd.ReadLineAsync();
             while (true)
             {
-                String str = rd.ReadLine();
-                Console.WriteLine("Read: " + str);
-                msgs.Add(str);
-                Console.WriteLine("сообщения:");
-                foreach(string str2 in msgs)
+                if (t.IsCompleted)
+
                 {
-                    Console.WriteLine(str2);
+                    msgs.Add(t.Result);
+                    t = rd.ReadLineAsync();
                 }
-                wr.WriteLine("Ответ: "+ str);
-                wr.Flush();
-                await Task.Delay(2000);
+                if (msgCount < msgs.Count)
+                {
+                    ////Console.WriteLine("сообщения:");
+                    foreach (string str2 in msgs)
+                    {
+                        wr.WriteLine("Ответ: " + str2);
+                        wr.Flush();
+                        msgCount++;
+                    }
+
+                }
             }
+            
+            
+               // await Task.Delay(2000);
+            //}
         }
         static void Main(string[] args)
         {
