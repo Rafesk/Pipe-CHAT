@@ -27,7 +27,6 @@ namespace Pipe_Chat
         {
             wr.WriteLine(textBox1.Text);
             wr.Flush();
-            textBox2.Text += "Вы: " + textBox1.Text + "\r\n";
             textBox1.Text = "";
             
             //String text = rd.ReadLine();
